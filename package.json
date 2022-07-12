@@ -2,10 +2,12 @@
   "name": "demo",
   "scripts": {
     "test": "npm run test",
-    "eslint": "eslint --ext .js /"
+    "eslint": "eslint --ext .js /",
+    "gh-pages": "push-dir --branch=gh-pages"
   },
   "devDependencies": {
     "eslint": "8.19.0",
-    "eslint-config-htmlacademy": "6.0.0"
+    "eslint-config-htmlacademy": "6.0.0",
+    "push-dir": "0.4.1"
   }
 }
