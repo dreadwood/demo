@@ -60,16 +60,16 @@ const choices = new Choices(element, {
   },
 });
 
-// const form = document.querySelector('.form');
-// const result = document.querySelector('.result');
-// const resultOutput = result.querySelector('pre');
-// form.addEventListener('submit', (evt) => {
-//   evt.preventDefault();
+const form = document.querySelector('.form');
+const result = document.querySelector('.result');
+const resultOutput = result.querySelector('pre');
 
-//   result.removeAttribute('hidden');
-//   resultOutput.innerHTML = JSON.stringify(collectData(form), null, 2);
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
 
-// });
+  result.removeAttribute('hidden');
+  resultOutput.innerHTML = JSON.stringify(collectData(form), null, 2);
+});
 
 function getChoices(valueData) {
   return valueData.flatMap((item) => item.value.map((it) => ({
