@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo-for-choices.js</title>
+  <link rel="stylesheet" href="./choices.min.css"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Choices.js</h1>
+    <div class="section">
+
+      <form class="form" action="">
+        <div class="grid">
+
+          <div class="el el--main">
+            <label class="label" for="select-custom">Select custom</label>
+            <select
+              id="select-custom"
+              name="select-custom"
+              placeholder="This is a search placeholder"
+            ></select>
+          </div>
+
+          <div class="el">
+            <label class="label" for="select-default">Select default</label>
+            <select class="field" name="select-default" id="select-default">
+              <option value="1">Значение по умолчанию 1</option>
+              <option value="2">Значение по умолчанию 2</option>
+              <option value="3">Значение по умолчанию 300</option>
+            </select>
+          </div>
+
+          <div class="el">
+            <label class="label" for="field-text">Text field</label>
+            <input class="field" id="field-text" name="field-text" type="text" placeholder="Тектовое поле">
+          </div>
+
+          <button class="btn" type="submit">Search</button>
+
+        </div>
+      </form>
+
+      <!-- description -->
+      <div class="info">
+        <p>Поиск возможен не только по видимым label, но и по ключевым словам, например для назвинй цветов это слово "цвета", для фигур "геометрия" и "фигуры", регистр не учитывается. Так же возможны орфографические ошибки.</p>
+      </div>
+
+      <!-- output -->
+      <div class="info result" hidden>
+        <h2 class="title">Result</h2>
+        <pre></pre>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script> -->
+  <script src="./choices.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
